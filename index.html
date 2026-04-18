@@ -53,7 +53,7 @@ body{
 /* ── HERO ── */
 .hero{background:linear-gradient(135deg,#1B64DA 0%,#3182F6 100%);border-radius:var(--r3);padding:18px 16px;color:#fff;margin-bottom:12px;}
 .hero-top{display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:8px;}
-.hero-name{font-size:21px;font-weight:800;line-height:1.2;}
+.hero-name{font-size:21px;font-weight:800;line-height:1.2;white-space:nowrap;}
 .hero-ver{font-size:10px;background:rgba(255,255,255,.2);color:#fff;padding:3px 9px;border-radius:20px;font-weight:700;flex-shrink:0;margin-left:8px;}
 .hero-subs{margin-bottom:14px;}
 .hero-sub1{font-size:17px;font-weight:700;line-height:1.55;opacity:.95;margin-bottom:5px;}
@@ -71,8 +71,8 @@ body{
 .qbtn:active{opacity:.78;}
 .qrow{display:flex;align-items:center;gap:7px;}
 .qi{font-size:22px;line-height:1;}
-.ql{font-size:16px;font-weight:800;line-height:1.2;}
-.qs{font-size:12px;font-weight:600;opacity:.75;}
+.ql{font-size:18px;font-weight:800;line-height:1.2;}
+.qs{font-size:14px;font-weight:600;opacity:.75;}
 
 /* 활성 버튼 색상 */
 .qb-bl{background:var(--bll);} .qb-bl .ql{color:var(--bl);} .qb-bl .qs{color:var(--bld);}
@@ -84,7 +84,7 @@ body{
 .qb-lk{background:var(--g1);border:1.5px dashed var(--g2);}
 .qb-lk .qi{opacity:.35;}
 .qb-lk .ql{color:var(--pm);opacity:.7;}
-.qb-lk .qs{color:var(--bl);font-weight:700;opacity:1;}  /* <별도문의> 파랑으로 강조 */
+.qb-lk .qs{color:var(--bl);font-weight:700;opacity:1;}
 .lk-ic{position:absolute;top:8px;right:9px;font-size:15px;opacity:.6;}
 
 /* ── 구분선 라벨 ── */
@@ -123,18 +123,18 @@ body{
 
 /* ── 검색 ── */
 .srw{position:relative;margin-bottom:10px;}
-.sri{width:100%;padding:12px 14px 12px 42px;border-radius:var(--r2);border:1.5px solid var(--g2);font-size:16px;background:var(--wh);outline:none;font-family:inherit;-webkit-appearance:none;color:var(--t1);}
+.sri{width:100%;padding:14px 16px 14px 44px;border-radius:var(--r2);border:1.5px solid var(--g2);font-size:18px;background:var(--wh);outline:none;font-family:inherit;-webkit-appearance:none;color:var(--t1);}
 .sri:focus{border-color:var(--bl);}
 .sric{position:absolute;left:13px;top:50%;transform:translateY(-50%);font-size:17px;color:var(--t3);pointer-events:none;}
-.acnt{font-size:13px;color:var(--t3);margin-bottom:8px;}
+.acnt{font-size:15px;color:var(--t3);margin-bottom:8px;}
 
 /* ── 조문 카드 ── */
 .ait{background:var(--wh);border-radius:var(--r2);padding:14px;margin-bottom:9px;box-shadow:var(--sh);cursor:pointer;}
 .aih{display:flex;align-items:center;gap:7px;margin-bottom:6px;}
-.ain{font-size:14px;font-weight:800;color:var(--bl);white-space:nowrap;}
-.att{font-size:16px;font-weight:700;flex:1;}
+.ain{font-size:17px;font-weight:800;color:var(--bl);white-space:nowrap;}
+.att{font-size:19px;font-weight:700;flex:1;}
 .bmb{border:none;background:none;font-size:20px;cursor:pointer;flex-shrink:0;padding:2px;min-width:40px;min-height:40px;display:flex;align-items:center;justify-content:center;}
-.apv{font-size:13px;color:var(--t3);overflow:hidden;text-overflow:ellipsis;white-space:nowrap;margin-top:4px;}
+.apv{font-size:15px;color:var(--t3);overflow:hidden;text-overflow:ellipsis;white-space:nowrap;margin-top:4px;}
 
 /* ── 퀴즈 시작 ── */
 .qs-c{background:var(--wh);border-radius:var(--r3);padding:24px 16px;box-shadow:var(--sh);margin-bottom:10px;text-align:center;}
@@ -154,9 +154,9 @@ body{
 .qcard{background:var(--wh);border-radius:var(--r3);padding:18px;box-shadow:var(--sh);margin-bottom:12px;}
 .qmeta{display:flex;gap:7px;margin-bottom:10px;flex-wrap:wrap;}
 .qtag{font-size:12px;background:var(--g1);color:var(--t2);padding:3px 9px;border-radius:5px;font-weight:600;}
-.qtxt{font-size:17px;font-weight:700;line-height:1.65;color:var(--t1);}
+.qtxt{font-size:20px;font-weight:700;line-height:1.65;color:var(--t1);}
 .choices{display:flex;flex-direction:column;gap:10px;margin-top:16px;}
-.cho{width:100%;text-align:left;padding:14px;border-radius:var(--r2);border:1.5px solid var(--g2);background:var(--wh);font-size:15px;font-family:inherit;cursor:pointer;display:flex;gap:10px;align-items:flex-start;line-height:1.55;color:var(--t1);transition:all .15s;min-height:50px;}
+.cho{width:100%;text-align:left;padding:14px;border-radius:var(--r2);border:1.5px solid var(--g2);background:var(--wh);font-size:18px;font-family:inherit;cursor:pointer;display:flex;gap:10px;align-items:flex-start;line-height:1.65;color:var(--t1);transition:all .15s;min-height:56px;}
 .cho:active{opacity:.8;}
 .cho:disabled{cursor:default;}
 .cn{font-weight:800;color:var(--bl);flex-shrink:0;min-width:18px;}
@@ -172,12 +172,12 @@ body{
 .alb{display:flex;align-items:center;justify-content:space-between;width:100%;margin-top:12px;padding:14px;background:var(--bll);border:none;border-radius:var(--r2);cursor:pointer;font-family:inherit;transition:background .15s;min-height:64px;}
 .alb:hover{background:#D6EAFF;}
 .albl{display:flex;flex-direction:column;align-items:flex-start;gap:3px;}
-.albh{font-size:11px;font-weight:700;color:var(--bl);letter-spacing:.3px;}
-.albr{font-size:16px;font-weight:800;color:var(--bld);}
+.albh{font-size:14px;font-weight:700;color:var(--bl);letter-spacing:.3px;}
+.albr{font-size:19px;font-weight:800;color:var(--bld);}
 .alba{font-size:22px;color:var(--bl);}
 .nbox{margin-top:10px;padding:12px 14px;background:var(--g1);border-radius:var(--r2);border-left:3px solid var(--t3);}
-.nt{font-size:14px;font-weight:700;color:var(--t2);margin-bottom:3px;}
-.ns{font-size:13px;color:var(--t3);line-height:1.55;}
+.nt{font-size:17px;font-weight:700;color:var(--t2);margin-bottom:3px;}
+.ns{font-size:16px;color:var(--t3);line-height:1.55;}
 .nl{color:var(--bl);font-weight:700;text-decoration:none;}
 
 /* ── 버튼 ── */
@@ -265,8 +265,8 @@ body{
 .mhd{width:44px;height:5px;background:var(--g2);border-radius:3px;margin:0 auto 18px;}
 
 /* 모달 내용 — 충분히 큰 글씨 */
-.ml{font-size:13px;font-weight:700;color:var(--bl);margin-bottom:3px;}
-.mc{font-size:13px;color:var(--t3);margin-bottom:12px;}
+.ml{font-size:17px;font-weight:700;color:var(--bl);margin-bottom:3px;}
+.mc{font-size:17px;color:var(--t3);margin-bottom:12px;}
 .mt{font-size:21px;font-weight:800;margin-bottom:12px;line-height:1.3;color:var(--t1);}
 .mbdg{margin-bottom:14px;}
 .mcnt{
@@ -320,6 +320,61 @@ body{
   .qi{font-size:26px;}
   .ql{font-size:18px;}
 }
+
+/* ======= OX 퀴즈 ======= */
+.qb-ox{background:linear-gradient(135deg,#e8f3ff 0%,#d9ecff 100%);}
+.qb-ox-red{background:linear-gradient(135deg,#f04452 0%,#c0392b 100%);}
+.ox-tabs{display:flex;gap:7px;flex-wrap:wrap;margin-bottom:16px}
+.ox-tab{flex:1;min-width:72px;padding:12px 8px;border-radius:999px;font-size:15px;font-weight:800;border:1.5px solid var(--g2,#e5e8eb);background:#fff;color:#4e5968;cursor:pointer;transition:all .16s;text-align:center}
+.ox-tab.active{background:#3182F6;color:#fff;border-color:#3182F6}
+.ox-tab-cnt{font-size:11px;margin-left:2px;opacity:.75}
+.ox-lawinfo{padding:18px;margin-bottom:16px;border-radius:18px;background:#fff;border:1px solid var(--g2,#e5e8eb)}
+.ox-lawinfo-title{font-size:23px;font-weight:900;margin-bottom:4px}
+.ox-lawinfo-sub{font-size:16px;color:#8b95a1}
+.ox-startbtn{width:100%;padding:22px;font-size:20px;font-weight:900;background:#3182F6;color:#fff;border:none;border-radius:18px;cursor:pointer;margin-top:4px}
+.ox-progress-wrap{margin-bottom:18px}
+.ox-progress-info{display:flex;justify-content:space-between;font-size:15px;font-weight:800;color:#4e5968;margin-bottom:8px}
+.ox-pbar{height:8px;background:#e5e8eb;border-radius:999px;overflow:hidden;margin-bottom:4px}
+.ox-pfill{height:100%;background:#3182F6;border-radius:999px;transition:width .3s ease}
+.ox-law-badge{font-size:14px;font-weight:800;color:#3182F6;background:#e8f3ff;padding:6px 12px;border-radius:999px;display:inline-block;margin-bottom:12px}
+.ox-qcard{padding:24px 20px;margin-bottom:20px;border-radius:18px;background:#fff;border:1px solid #e5e8eb;box-shadow:0 4px 16px rgba(15,23,42,.05)}
+.ox-qtext{font-size:22px;line-height:1.65;font-weight:700;color:#191f28}
+.ox-btn-row{display:flex;gap:14px;margin-bottom:20px}
+.ox-ans-btn{flex:1;padding:22px;border-radius:18px;font-size:32px;font-weight:900;border:2.5px solid;cursor:pointer;transition:all .16s;background:#fff}
+.ox-o-btn{border-color:#03b26c;color:#03b26c;background:rgba(3,178,108,.07)}
+.ox-x-btn{border-color:#f04452;color:#f04452;background:rgba(240,68,82,.07)}
+.ox-o-btn:active{background:#03b26c;color:#fff;transform:scale(.96)}
+.ox-x-btn:active{background:#f04452;color:#fff;transform:scale(.96)}
+.ox-feedback{font-size:22px;font-weight:900;text-align:center;padding:16px;border-radius:18px;margin-bottom:14px}
+.ox-correct{background:#e8f7f0;color:#03b26c}
+.ox-wrong-fb{background:#feecef;color:#f04452}
+.ox-explain-card{padding:20px;margin-bottom:14px;border-radius:18px;background:#fff;border:1px solid #e5e8eb}
+.ox-explain-label{font-size:11px;font-weight:800;color:#8b95a1;letter-spacing:.06em;margin-bottom:8px}
+.ox-explain-ans{font-size:19px;font-weight:900;color:#191f28;margin-bottom:8px}
+.ox-explain-wrong{font-size:17px;line-height:1.6;color:#f04452;font-weight:700;background:#feecef;padding:10px 14px;border-radius:12px;margin-bottom:10px}
+.ox-explain-content{font-size:17px;line-height:1.75;color:#4e5968;border-top:1px solid #e5e8eb;padding-top:12px;margin-top:6px}
+.ox-nextbtn{width:100%;padding:20px;font-size:19px;font-weight:900;background:#3182F6;color:#fff;border:none;border-radius:18px;cursor:pointer}
+.ox-result-box{background:#e8f3ff;border-radius:18px;padding:28px;text-align:center;margin-bottom:20px}
+.ox-result-score{font-size:54px;font-weight:900;color:#3182F6;margin-bottom:4px}
+.ox-result-pct{font-size:20px;font-weight:800;color:#4e5968;margin-bottom:16px}
+.ox-result-bar{height:10px;background:rgba(49,130,246,.15);border-radius:999px;overflow:hidden}
+.ox-result-fill{height:100%;background:#3182F6;border-radius:999px}
+.ox-wrong-section-title{font-size:16px;font-weight:900;color:#191f28;margin:20px 0 12px;padding-left:4px}
+.ox-wrong-card{padding:16px;margin-bottom:10px;border-radius:18px;background:#fff;border:1px solid #e5e8eb}
+.ox-wrong-law{font-size:14px;font-weight:800;color:#3182F6;margin-bottom:8px}
+.ox-wrong-q{font-size:18px;font-weight:700;color:#191f28;margin-bottom:10px;line-height:1.55}
+.ox-wrong-ans-row{display:flex;gap:8px;margin-bottom:8px;flex-wrap:wrap}
+.ox-badge{font-size:12px;font-weight:800;padding:5px 10px;border-radius:999px}
+.ox-badge-o{background:#e8f7f0;color:#03b26c}
+.ox-badge-x{background:#feecef;color:#f04452}
+.ox-badge-my{background:#fff4ec;color:#f97316}
+.ox-wrong-note{font-size:16px;color:#f04452;font-weight:700;background:#feecef;padding:8px 12px;border-radius:10px;margin-bottom:8px;line-height:1.55}
+.ox-wrong-content{font-size:16px;color:#4e5968;line-height:1.65;border-top:1px solid #e5e8eb;padding-top:10px;margin-top:6px}
+.ox-perfect{text-align:center;font-size:20px;font-weight:900;color:#03b26c;padding:24px;background:#e8f7f0;border-radius:18px;margin-bottom:20px}
+.ox-result-btns{display:flex;gap:10px;margin-top:16px}
+.ox-result-btns button{flex:1;padding:16px;border-radius:18px;font-size:15px;font-weight:800;border:none;cursor:pointer}
+.ox-retry{background:#3182F6;color:#fff}
+.ox-back-btn{background:#f2f4f6;color:#4e5968;border:1.5px solid #e5e8eb !important}
 </style>
 </head>
 <body>
@@ -339,33 +394,39 @@ body{
   <!-- 히어로 -->
   <div class="hero">
     <div class="hero-top">
-      <span class="hero-name">🏦 MG간부 뽀개기</span>
-      <span class="hero-ver">무료버전 (기능제한)</span>
+      <div style="display:flex;align-items:center;gap:8px;flex-wrap:nowrap;">
+        <span class="hero-name">🏦 MG간부 뽀개기</span>
+        <span class="hero-ver">무료버전 (기능제한)</span>
+      </div>
+      <div style="margin-top:5px;">
+        <span style="color:#FFD700;font-size:13px;font-weight:800;background:rgba(255,215,0,.15);padding:3px 8px;border-radius:999px;white-space:nowrap;">&lt;법·령·시행규칙 V2_3월버전&gt;</span>
+      </div>
     </div>
     <div class="hero-subs">
-      <div class="hero-sub1">
-        새마을금고 법령 과목중 세부과목&nbsp;<span class="yw">&#12296;새마을금고 법령&#12297;</span>
+      <div class="hero-sub1" style="line-height:1.8;font-size:16px;font-weight:800;">
+        📌 4월 시작 그룹1 : <strong>OX먼저 시작</strong> &nbsp;|&nbsp;
+        3월 말 시작 그룹2 : <strong>기출문제 시작</strong><br>
+        3월 초 그룹3 : <strong>빈칸문제</strong><span style="color:#FFD700;font-size:13px;font-weight:700;margin-left:6px">&lt;업로드완료&gt;</span>
       </div>
-      <div class="hero-sub2">
-        &lt;감독기준, 시행세칙, 정관, 규약&gt;은 개발중 별도문의.
+      <div class="hero-sub2" style="margin-top:6px;font-size:14px;opacity:.95;font-weight:700;">
+        📣 ✅ 금고 내부망 PC 작동 버전 배포 완료
       </div>
     </div>
-    <div class="hstats">
-      <div class="hst"><div class="hst-n">법·령</div><div class="hst-l">시행규칙</div></div>
-      <div class="hst"><div class="hst-n">40</div><div class="hst-l">기출 문제</div></div>
-      <div class="hst"><div class="hst-n">122</div><div class="hst-l">★기출높음</div></div>
-      <div class="hst"><div class="hst-n">6</div><div class="hst-l">기출연도</div></div>
-    </div>
+    
   </div>
 
   <!-- ① 기본 기능 버튼 (2×2) -->
   <div class="qgrid">
+    <button class="qbtn qb-ox-red" onclick="goPage('ox','법령 OX 퀴즈')">
+      <div class="qrow"><span class="qi">📝</span><span class="ql" style="color:#fff;font-weight:900">법령 OX 퀴즈</span></div>
+      <span class="qs" style="color:rgba(255,255,255,.85)">조문별 O/X 확인</span>
+    </button>
     <button class="qbtn qb-bl" onclick="goPage('law','법령 읽기')">
       <div class="qrow"><span class="qi">📖</span><span class="ql">법령 읽기</span></div>
       <span class="qs">법·령·시행규칙</span>
     </button>
-    <button class="qbtn qb-gn" onclick="goPage('quiz','문제 풀기')">
-      <div class="qrow"><span class="qi">✏️</span><span class="ql">문제 풀기</span></div>
+    <button class="qbtn qb-gn" onclick="goPage('quiz','기출문제')">
+      <div class="qrow"><span class="qi">✏️</span><span class="ql">기출문제</span></div>
       <span class="qs">40문항 기출</span>
     </button>
     <button class="qbtn qb-yw" onclick="goPage('note','오답·북마크');swTab('bm')">
@@ -381,7 +442,7 @@ body{
   <!-- 구분선 -->
   <div class="sect-div">
     <div class="sect-div-line"></div>
-    <span class="sect-div-txt">🔒 유료 기능 (별도문의)</span>
+    <span class="sect-div-txt" style="font-size:22px;font-weight:900;color:#191f28;letter-spacing:-.5px;">🔓 그룹별 공개</span>
     <div class="sect-div-line"></div>
   </div>
 
@@ -390,22 +451,22 @@ body{
     <button class="qbtn qb-lk" onclick="showPM()">
       <span class="lk-ic">🔒</span>
       <div class="qrow"><span class="qi">📚</span><span class="ql">타 규정 학습</span></div>
-      <span class="qs">&lt;별도문의&gt;</span>
+      
     </button>
     <button class="qbtn qb-lk" onclick="showPM()">
       <span class="lk-ic">🔒</span>
       <div class="qrow"><span class="qi">📝</span><span class="ql">타규정 문제풀기</span></div>
-      <span class="qs">&lt;별도문의&gt;</span>
+      
     </button>
     <button class="qbtn qb-lk" onclick="showPM()">
       <span class="lk-ic">🔒</span>
       <div class="qrow"><span class="qi">🎯</span><span class="ql">법령규정별 예상문제</span></div>
-      <span class="qs">&lt;별도문의&gt;</span>
+      
     </button>
     <button class="qbtn qb-lk" onclick="showPM()">
       <span class="lk-ic">🔒</span>
       <div class="qrow"><span class="qi">⚙️</span><span class="ql">기타 기능</span></div>
-      <span class="qs">&lt;별도문의&gt;</span>
+      
     </button>
   </div>
 
@@ -460,7 +521,14 @@ body{
     <button class="tbb" id="tbm" onclick="swTab('bm')">🔖 북마크</button>
   </div>
   <div id="wrPanel"></div>
+
+
   <div id="bmPanel" style="display:none;"></div>
+</div>
+
+<!-- ======= OX 퀴즈 페이지 ======= -->
+<div id="page-ox" class="page">
+  <div id="ox-cnt" style="padding:20px 16px 40px"></div>
 </div>
 
 <!-- ══ 퀴즈 진행 ══ -->
@@ -555,7 +623,7 @@ body{
       <div class="pmf"><span class="pmfi">⚙️</span><span class="pmft">기타 기능</span></div>
       <div class="pmf"><span class="pmfi">🤖</span><span class="pmft">수준별 AI 상세 해설</span></div>
     </div>
-    <a class="pm-em" href="mailto:pcrew321@gmail.com">✉️ 별도문의 — pcrew321@gmail.com</a>
+    <a class="pm-em" href="mailto:pcrew321@gmail.com">✉️ 문의 — pcrew321@gmail.com</a>
     <button class="pm-cl" onclick="document.getElementById('pmMod').classList.remove('on')">✕ 닫기</button>
   </div>
 </div>
@@ -599,6 +667,7 @@ function goPage(id,ttl){
   if(id==='law')renderLaw();
   if(id==='note')renderNote();
   if(id==='quiz')renderLF();
+  if(id==='ox')oxRender();
   window.scrollTo(0,0);
 }
 function goBack(){
@@ -780,8 +849,158 @@ renderHot();
 <nav class="bnav">
   <button class="nb on" id="nb-home" onclick="goPage('home')"><span class="ni">🏠</span>홈</button>
   <button class="nb" id="nb-law" onclick="goPage('law','법령 읽기')"><span class="ni">📖</span>법령</button>
-  <button class="nb" id="nb-quiz" onclick="goPage('quiz','문제 풀기')"><span class="ni">✏️</span>문제풀기</button>
+  <button class="nb" id="nb-quiz" onclick="goPage('quiz','기출문제')"><span class="ni">✏️</span>기출문제</button>
   <button class="nb" id="nb-note" onclick="goPage('note','오답·북마크')"><span class="ni">📋</span>오답노트</button>
 </nav>
+
+<script>
+// ==================== OX 퀴즈 엔진 ====================
+const OX_DATA = [{"law": "새마을금고법", "article": "제1조", "title": "목적", "question": "새마을금고법의 목적에 회원의 경제적·사회적·문화적 지위 향상이 포함된다.", "answer": "O", "wrong_note": "", "article_content": "이 법은 국민의 자주적인 협동 조직을 바탕으로 상부상조 정신에 입각하여 자금의 조성과 이용, 회원의 경제적·사회적·문화적 지위의 향상, 지역사회 개발을 통한 건전한 국민정신의 함양과 국가경제 발전에 이바지함을 목적으로 한다."}, {"law": "새마을금고법", "article": "제1조", "title": "목적", "question": "새마을금고법은 영리법인으로서 이익 극대화를 목적으로 한다.", "answer": "X", "wrong_note": "새마을금고는 비영리법인이며, 국민의 자주적 협동과 상부상조 정신에 기반한다.", "article_content": "이 법은 국민의 자주적인 협동 조직을 바탕으로 상부상조 정신에 입각하여 자금의 조성과 이용, 회원의 경제적·사회적·문화적 지위의 향상, 지역사회 개발을 통한 건전한 국민정신의 함양과 국가경제 발전에 이바지함을 목적으로 한다."}, {"law": "새마을금고법", "article": "제2조", "title": "정의와 명칭", "question": "새마을금고는 영리법인이 아니라 비영리법인이다.", "answer": "O", "wrong_note": "", "article_content": "①'금고'란 이 법에 따라 설립된 비영리법인인 새마을금고를 말한다. ②'지역금고'란 동일한 행정구역, 경제권 또는 생활권을 업무구역으로 하는 금고를 말한다. ③'중앙회'란 모든 금고의 공동이익 증진을 위하여 이 법에 따라 설립한 비영리법인인 새마을금고중앙회를 말한다."}, {"law": "새마을금고법", "article": "제2조", "title": "정의와 명칭", "question": "지역금고는 전국을 단일 업무구역으로 하는 금고를 말한다.", "answer": "X", "wrong_note": "지역금고는 동일한 행정구역, 경제권 또는 생활권을 업무구역으로 하는 금고이다.", "article_content": "①'금고'란 이 법에 따라 설립된 비영리법인인 새마을금고를 말한다. ②'지역금고'란 동일한 행정구역, 경제권 또는 생활권을 업무구역으로 하는 금고를 말한다. ③'중앙회'란 모든 금고의 공동이익 증진을 위하여 이 법에 따라 설립한 비영리법인인 새마을금고중앙회를 말한다."}, {"law": "새마을금고법", "article": "제3조", "title": "국가 등의 협력의무", "question": "국가나 지방자치단체는 예산 범위에서 중앙회에 보조금을 내줄 수 있다.", "answer": "O", "wrong_note": "", "article_content": "①국가나 지방자치단체는 금고나 중앙회가 행하는 사업의 육성을 위하여 필요한 지원을 하여야 하며, 국공유재산을 우선적으로 대여하거나 사용·수익하게 할 수 있다. ②국가나 지방자치단체는 금고의 원활한 발전을 위하여 예산의 범위에서 중앙회에 보조금을 내줄 수 있다."}, {"law": "새마을금고법", "article": "제3조", "title": "국가 등의 협력의무", "question": "국가나 지방자치단체는 새마을금고에 보조금을 직접 지급하여야 한다.", "answer": "X", "wrong_note": "보조금은 중앙회에 지급할 수 있으며, 개별 금고에 직접 지급 의무는 없다.", "article_content": "①국가나 지방자치단체는 금고나 중앙회가 행하는 사업의 육성을 위하여 필요한 지원을 하여야 하며, 국공유재산을 우선적으로 대여하거나 사용·수익하게 할 수 있다. ②국가나 지방자치단체는 금고의 원활한 발전을 위하여 예산의 범위에서 중앙회에 보조금을 내줄 수 있다."}, {"law": "새마을금고법", "article": "제5조", "title": "정치 관여 금지", "question": "새마을금고와 중앙회는 정치에 관여하는 행위를 일절 할 수 없다.", "answer": "O", "wrong_note": "", "article_content": "금고와 중앙회는 정치에 관여하는 일체의 행위를 할 수 없다."}, {"law": "새마을금고법", "article": "제5조", "title": "정치 관여 금지", "question": "새마을금고는 공익적 목적에 한하여 정치활동에 참여할 수 있다.", "answer": "X", "wrong_note": "금고와 중앙회는 목적 여하를 불문하고 정치에 관여하는 일체의 행위를 할 수 없다.", "article_content": "금고와 중앙회는 정치에 관여하는 일체의 행위를 할 수 없다."}, {"law": "새마을금고법", "article": "제7조", "title": "설립인가", "question": "새마을금고를 설립하려면 행정안전부장관의 인가를 받아야 한다.", "answer": "O", "wrong_note": "", "article_content": "새마을금고를 설립하려는 자는 행정안전부장관의 인가를 받아야 한다. 인가 신청 전 창립총회를 개최하여야 하며, 창립총회 의결을 위해서는 설립동의자 과반수 출석과 출석자 3분의 2 이상의 동의가 필요하다."}, {"law": "새마을금고법", "article": "제7조", "title": "설립인가", "question": "새마을금고 설립인가는 금융위원회로부터 받아야 한다.", "answer": "X", "wrong_note": "새마을금고 설립인가는 행정안전부장관으로부터 받아야 한다.", "article_content": "새마을금고를 설립하려는 자는 행정안전부장관의 인가를 받아야 한다. 인가 신청 전 창립총회를 개최하여야 하며, 창립총회 의결을 위해서는 설립동의자 과반수 출석과 출석자 3분의 2 이상의 동의가 필요하다."}, {"law": "새마을금고법", "article": "제7조의2", "title": "출자금 기준", "question": "새마을금고의 출자금 기준은 대통령령으로 정한다.", "answer": "O", "wrong_note": "", "article_content": "새마을금고의 출자금은 대통령령으로 정하는 기준 이상이어야 한다."}, {"law": "새마을금고법", "article": "제7조의2", "title": "출자금 기준", "question": "새마을금고의 출자금 기준은 중앙회장이 자율적으로 정한다.", "answer": "X", "wrong_note": "출자금 기준은 대통령령으로 정한다.", "article_content": "새마을금고의 출자금은 대통령령으로 정하는 기준 이상이어야 한다."}, {"law": "새마을금고법", "article": "제9조", "title": "회원", "question": "회원 1인의 출자좌수는 총 출자좌수의 20%를 초과할 수 없다.", "answer": "O", "wrong_note": "", "article_content": "①금고의 회원이 될 수 있는 자는 금고의 업무구역 내에 주소, 거소, 사무소 또는 사업장이 있는 개인이나 법인, 기타 단체이다. ⑤회원 1인의 출자좌수는 총 출자좌수의 100분의 20을 초과할 수 없다."}, {"law": "새마을금고법", "article": "제9조", "title": "회원", "question": "금고 업무구역 밖에 주소를 둔 개인도 회원이 될 수 있다.", "answer": "X", "wrong_note": "회원은 업무구역 내에 주소, 거소, 사무소 또는 사업장이 있어야 한다.", "article_content": "①금고의 회원이 될 수 있는 자는 금고의 업무구역 내에 주소, 거소, 사무소 또는 사업장이 있는 개인이나 법인, 기타 단체이다. ⑤회원 1인의 출자좌수는 총 출자좌수의 100분의 20을 초과할 수 없다."}, {"law": "새마을금고법", "article": "제10조", "title": "탈퇴", "question": "회원은 사업연도 말에 탈퇴할 수 있으며, 부득이한 사유가 있으면 언제든지 탈퇴 가능하다.", "answer": "O", "wrong_note": "", "article_content": "①회원은 금고에 탈퇴 의사를 예고하고 사업연도 말에 탈퇴할 수 있다. 다만, 부득이한 사유가 있을 때에는 언제든지 탈퇴할 수 있다."}, {"law": "새마을금고법", "article": "제10조", "title": "탈퇴", "question": "회원은 탈퇴 의사 표시 즉시 그 효력이 발생하며 언제든지 탈퇴할 수 있다.", "answer": "X", "wrong_note": "원칙적으로 사업연도 말에 탈퇴하며, 부득이한 경우에만 언제든지 탈퇴 가능하다.", "article_content": "①회원은 금고에 탈퇴 의사를 예고하고 사업연도 말에 탈퇴할 수 있다. 다만, 부득이한 사유가 있을 때에는 언제든지 탈퇴할 수 있다."}, {"law": "새마을금고법", "article": "제11조", "title": "출자금의 환급", "question": "탈퇴회원은 정관에서 정하는 바에 따라 잉여금 배당을 받을 권리가 있다.", "answer": "O", "wrong_note": "", "article_content": "탈퇴회원 및 제명회원에게는 탈퇴나 제명 당시의 사업연도 회계결산 후 잉여금이 있을 때에는 정관에서 정하는 바에 따라 배당을 받을 권리가 있다."}, {"law": "새마을금고법", "article": "제11조", "title": "출자금의 환급", "question": "탈퇴 즉시 출자금 전액을 환급받는 것이 원칙이다.", "answer": "X", "wrong_note": "탈퇴 당시 사업연도 회계결산 후 잉여금이 있을 때 정관에 따라 배당한다.", "article_content": "탈퇴회원 및 제명회원에게는 탈퇴나 제명 당시의 사업연도 회계결산 후 잉여금이 있을 때에는 정관에서 정하는 바에 따라 배당을 받을 권리가 있다."}, {"law": "새마을금고법", "article": "제12조", "title": "총회", "question": "정기총회는 매 사업연도 종료 후 3개월 이내에 소집하여야 한다.", "answer": "O", "wrong_note": "", "article_content": "①금고는 총회를 두며, 총회는 회원으로 구성한다. ②총회는 정기총회와 임시총회로 구분한다. ③정기총회는 매 사업연도 종료 후 3개월 이내에 소집한다."}, {"law": "새마을금고법", "article": "제12조", "title": "총회", "question": "정기총회는 매 사업연도 개시 전에 소집하여야 한다.", "answer": "X", "wrong_note": "정기총회는 매 사업연도 종료 후 3개월 이내에 소집한다.", "article_content": "①금고는 총회를 두며, 총회는 회원으로 구성한다. ②총회는 정기총회와 임시총회로 구분한다. ③정기총회는 매 사업연도 종료 후 3개월 이내에 소집한다."}, {"law": "새마을금고법", "article": "제13조", "title": "총회의 의결사항", "question": "금고의 합병과 해산은 총회의 의결을 거쳐야 한다.", "answer": "O", "wrong_note": "", "article_content": "다음 각 호의 사항은 총회의 의결을 거쳐야 한다: 정관의 변경, 임원의 선출, 사업계획 및 예산의 승인, 결산보고서의 승인, 잉여금의 처분, 금고의 합병·분할 및 해산 등"}, {"law": "새마을금고법", "article": "제13조", "title": "총회의 의결사항", "question": "임원 선출은 이사회 의결만으로 가능하다.", "answer": "X", "wrong_note": "임원 선출은 총회의 의결사항이다.", "article_content": "다음 각 호의 사항은 총회의 의결을 거쳐야 한다: 정관의 변경, 임원의 선출, 사업계획 및 예산의 승인, 결산보고서의 승인, 잉여금의 처분, 금고의 합병·분할 및 해산 등"}, {"law": "새마을금고법", "article": "제14조", "title": "대의원회", "question": "회원 수가 일정 기준 이상인 금고는 총회를 대신하는 대의원회를 구성할 수 있다.", "answer": "O", "wrong_note": "", "article_content": "①회원 수가 대통령령으로 정하는 기준 이상인 금고는 총회를 갈음하는 대의원회를 구성할 수 있다. ②대의원회는 대의원으로 구성하며, 대의원 수는 회원 수를 고려하여 정관으로 정한다."}, {"law": "새마을금고법", "article": "제14조", "title": "대의원회", "question": "대의원회를 구성한 금고는 총회를 폐지하고 대의원회만 운영한다.", "answer": "X", "wrong_note": "대의원회는 총회를 갈음하는 기관이며, 대의원 수 등은 정관으로 정한다.", "article_content": "①회원 수가 대통령령으로 정하는 기준 이상인 금고는 총회를 갈음하는 대의원회를 구성할 수 있다. ②대의원회는 대의원으로 구성하며, 대의원 수는 회원 수를 고려하여 정관으로 정한다."}, {"law": "새마을금고법", "article": "제17조", "title": "임원", "question": "새마을금고에는 이사장 1명, 이사 6명 이상, 감사 2명 이상을 두어야 한다.", "answer": "O", "wrong_note": "", "article_content": "①금고에 이사장 1명, 이사 6명 이상, 감사 2명 이상을 둔다. 다만, 감사 중 1명 이상은 외부감사인으로 선임하여야 한다."}, {"law": "새마을금고법", "article": "제17조", "title": "임원", "question": "새마을금고의 임원 구성에서 감사는 내부에서만 선임하면 된다.", "answer": "X", "wrong_note": "감사 중 1명 이상은 외부감사인으로 선임하여야 한다.", "article_content": "①금고에 이사장 1명, 이사 6명 이상, 감사 2명 이상을 둔다. 다만, 감사 중 1명 이상은 외부감사인으로 선임하여야 한다."}, {"law": "새마을금고법", "article": "제18조", "title": "임원의 임기", "question": "이사장의 임기는 4년이며 2회에 한하여 연임할 수 있다.", "answer": "O", "wrong_note": "", "article_content": "①이사장 및 이사의 임기는 4년으로 하며, 감사의 임기는 2년으로 한다. 이사장은 2회에 한하여 연임할 수 있다."}, {"law": "새마을금고법", "article": "제18조", "title": "임원의 임기", "question": "감사의 임기는 이사장과 동일하게 4년이다.", "answer": "X", "wrong_note": "감사의 임기는 2년이며, 이사장의 임기는 4년이다.", "article_content": "①이사장 및 이사의 임기는 4년으로 하며, 감사의 임기는 2년으로 한다. 이사장은 2회에 한하여 연임할 수 있다."}, {"law": "새마을금고법", "article": "제19조", "title": "임원의 결격사유", "question": "이 법 위반으로 벌금형을 받은 자는 형 선고 후 5년이 지나지 않으면 임원이 될 수 없다.", "answer": "O", "wrong_note": "", "article_content": "다음에 해당하는 자는 임원이 될 수 없다: 미성년자, 피성년후견인·피한정후견인, 파산자로서 복권되지 않은 자, 이 법을 위반하여 벌금 이상의 형을 선고받고 5년이 지나지 않은 자, 임원에서 해임된 후 5년이 지나지 않은 자 등"}, {"law": "새마을금고법", "article": "제19조", "title": "임원의 결격사유", "question": "파산자도 복권 여부와 관계없이 임원이 될 수 있다.", "answer": "X", "wrong_note": "파산자로서 복권되지 않은 자는 임원 결격사유에 해당한다.", "article_content": "다음에 해당하는 자는 임원이 될 수 없다: 미성년자, 피성년후견인·피한정후견인, 파산자로서 복권되지 않은 자, 이 법을 위반하여 벌금 이상의 형을 선고받고 5년이 지나지 않은 자, 임원에서 해임된 후 5년이 지나지 않은 자 등"}, {"law": "새마을금고법", "article": "제20조", "title": "임원의 해임", "question": "임원 해임은 재적회원 3분의 2 이상 출석, 출석회원 3분의 2 이상 찬성이 필요하다.", "answer": "O", "wrong_note": "", "article_content": "총회는 재적회원(대의원이 구성된 경우 재적대의원) 3분의 2 이상의 출석과 출석회원 3분의 2 이상의 찬성으로 임원을 해임할 수 있다."}, {"law": "새마을금고법", "article": "제20조", "title": "임원의 해임", "question": "임원 해임은 단순 과반수 출석과 과반수 찬성으로 의결할 수 있다.", "answer": "X", "wrong_note": "임원 해임은 재적회원 3분의 2 이상 출석과 출석회원 3분의 2 이상 찬성이 필요하다.", "article_content": "총회는 재적회원(대의원이 구성된 경우 재적대의원) 3분의 2 이상의 출석과 출석회원 3분의 2 이상의 찬성으로 임원을 해임할 수 있다."}, {"law": "새마을금고법", "article": "제26조", "title": "이사회", "question": "이사회는 재적이사 과반수 출석, 출석이사 과반수 찬성으로 의결한다.", "answer": "O", "wrong_note": "", "article_content": "①금고에 이사회를 두며, 이사장과 이사로 구성한다. ②이사회는 이사장이 소집하며, 재적이사 과반수의 출석으로 개의하고 출석이사 과반수의 찬성으로 의결한다."}, {"law": "새마을금고법", "article": "제26조", "title": "이사회", "question": "이사회는 이사장을 제외한 이사만으로 구성된다.", "answer": "X", "wrong_note": "이사회는 이사장과 이사로 구성된다.", "article_content": "①금고에 이사회를 두며, 이사장과 이사로 구성한다. ②이사회는 이사장이 소집하며, 재적이사 과반수의 출석으로 개의하고 출석이사 과반수의 찬성으로 의결한다."}, {"law": "새마을금고법", "article": "제28조", "title": "사업의 종류", "question": "새마을금고는 신용사업, 공제사업, 사회문화복지사업 등을 영위할 수 있다.", "answer": "O", "wrong_note": "", "article_content": "금고는 다음 사업을 할 수 있다: ①신용사업(예탁금·적금의 수입, 자금의 대출, 내·외국환 업무, 어음의 할인 등) ②공제사업 ③사회문화복지사업 ④경제사업 ⑤회원에 대한 정보 제공 사업 등"}, {"law": "새마을금고법", "article": "제28조", "title": "사업의 종류", "question": "새마을금고는 주식, 파생상품 등 투기성 투자사업을 자유롭게 할 수 있다.", "answer": "X", "wrong_note": "금고의 사업은 법에 열거된 사업 범위 내에서만 가능하며, 투기성 사업은 제한된다.", "article_content": "금고는 다음 사업을 할 수 있다: ①신용사업(예탁금·적금의 수입, 자금의 대출, 내·외국환 업무, 어음의 할인 등) ②공제사업 ③사회문화복지사업 ④경제사업 ⑤회원에 대한 정보 제공 사업 등"}, {"law": "새마을금고법", "article": "제29조", "title": "동일인 대출한도", "question": "금고는 동일인에 대해 자산 총액의 1%와 자기자본의 20% 중 어느 한도도 초과하여 대출할 수 없다.", "answer": "O", "wrong_note": "", "article_content": "금고는 동일인에 대한 대출을 자산 총액의 100분의 1과 자기자본의 100분의 20을 초과하여 할 수 없다."}, {"law": "새마을금고법", "article": "제29조", "title": "동일인 대출한도", "question": "금고의 동일인 대출한도는 자산 총액의 10%이다.", "answer": "X", "wrong_note": "동일인 대출한도는 자산 총액의 100분의 1(1%)과 자기자본의 100분의 20(20%)이다.", "article_content": "금고는 동일인에 대한 대출을 자산 총액의 100분의 1과 자기자본의 100분의 20을 초과하여 할 수 없다."}, {"law": "새마을금고법", "article": "제30조", "title": "대출 제한", "question": "금고 임원 및 직원에 대한 대출은 총 대출금액의 10% 이내로 제한된다.", "answer": "O", "wrong_note": "", "article_content": "금고는 임원과 직원에 대한 대출을 총 대출금액의 100분의 10 이내로 제한하여야 한다."}, {"law": "새마을금고법", "article": "제30조", "title": "대출 제한", "question": "금고는 임원에게는 무제한 대출이 가능하지만 직원 대출은 제한된다.", "answer": "X", "wrong_note": "임원과 직원 모두 총 대출금액의 10% 이내로 대출이 제한된다.", "article_content": "금고는 임원과 직원에 대한 대출을 총 대출금액의 100분의 10 이내로 제한하여야 한다."}, {"law": "새마을금고법", "article": "제31조", "title": "잉여금의 처리", "question": "금고는 잉여금의 10% 이상을 법정적립금으로 적립하여야 한다.", "answer": "O", "wrong_note": "", "article_content": "금고는 매 사업연도의 잉여금 중에서 이월결손금을 보전하고, 잉여금의 100분의 10 이상을 법정적립금으로, 잉여금의 100분의 20 이상을 사업준비금으로 적립하여야 한다."}, {"law": "새마을금고법", "article": "제31조", "title": "잉여금의 처리", "question": "금고는 잉여금 전액을 회원에게 배당할 수 있다.", "answer": "X", "wrong_note": "잉여금에서 이월결손금 보전, 법정적립금(10% 이상), 사업준비금(20% 이상) 적립 후 배당한다.", "article_content": "금고는 매 사업연도의 잉여금 중에서 이월결손금을 보전하고, 잉여금의 100분의 10 이상을 법정적립금으로, 잉여금의 100분의 20 이상을 사업준비금으로 적립하여야 한다."}, {"law": "새마을금고법", "article": "제32조", "title": "배당", "question": "금고의 회원에 대한 배당은 원칙적으로 출자좌수에 비례한다.", "answer": "O", "wrong_note": "", "article_content": "금고는 잉여금의 처분을 할 때 회원에 대한 배당은 출자좌수에 비례한다. 이용실적에 따른 배당을 할 경우에도 정관이 정하는 바에 따른다."}, {"law": "새마을금고법", "article": "제32조", "title": "배당", "question": "금고의 배당은 이사장이 단독으로 결정한다.", "answer": "X", "wrong_note": "배당은 총회의 의결사항이며, 출자좌수에 비례하여 실시한다.", "article_content": "금고는 잉여금의 처분을 할 때 회원에 대한 배당은 출자좌수에 비례한다. 이용실적에 따른 배당을 할 경우에도 정관이 정하는 바에 따른다."}, {"law": "새마을금고법", "article": "제52조", "title": "중앙회의 설립", "question": "새마을금고중앙회는 법인이다.", "answer": "O", "wrong_note": "", "article_content": "모든 금고의 공동이익 증진과 지속적인 발전을 도모하기 위하여 새마을금고중앙회를 설립하며, 중앙회는 법인으로 한다."}, {"law": "새마을금고법", "article": "제52조", "title": "중앙회의 설립", "question": "중앙회는 개별 금고와 마찬가지로 비영리 사단법인이다.", "answer": "X", "wrong_note": "중앙회는 법인이며, 구체적 성격은 법에서 정한다. 모든 금고의 공동이익 증진이 목적이다.", "article_content": "모든 금고의 공동이익 증진과 지속적인 발전을 도모하기 위하여 새마을금고중앙회를 설립하며, 중앙회는 법인으로 한다."}, {"law": "새마을금고법", "article": "제60조", "title": "중앙회의 사업", "question": "중앙회는 금고에 대한 지도·감독·검사 업무를 수행한다.", "answer": "O", "wrong_note": "", "article_content": "중앙회는 다음의 사업을 한다: ①금고의 사업에 대한 지도·감독 및 검사 ②금고에 대한 신용사업 ③공제사업 ④복지사업 ⑤교육·연수사업 ⑥중앙회 연합회 가입 ⑦정부·지자체 위탁사업 등"}, {"law": "새마을금고법", "article": "제60조", "title": "중앙회의 사업", "question": "중앙회의 교육·연수사업은 법적 근거 없이 임의로 수행하는 사업이다.", "answer": "X", "wrong_note": "교육·연수사업은 새마을금고법에서 규정한 중앙회 사업의 하나이다.", "article_content": "중앙회는 다음의 사업을 한다: ①금고의 사업에 대한 지도·감독 및 검사 ②금고에 대한 신용사업 ③공제사업 ④복지사업 ⑤교육·연수사업 ⑥중앙회 연합회 가입 ⑦정부·지자체 위탁사업 등"}, {"law": "새마을금고법", "article": "제74조", "title": "보고 및 검사", "question": "행정안전부장관은 새마을금고나 중앙회의 업무와 재산을 검사할 수 있다.", "answer": "O", "wrong_note": "", "article_content": "①금고와 중앙회는 행정안전부장관이 요구하는 경우 업무 및 재산에 관한 보고서를 제출하여야 한다. ②행정안전부장관은 금고나 중앙회의 업무와 재산 상황을 검사할 수 있다."}, {"law": "새마을금고법", "article": "제74조", "title": "보고 및 검사", "question": "금융감독원이 새마을금고를 직접 감독하고 검사한다.", "answer": "X", "wrong_note": "새마을금고 감독 주무부처는 행정안전부이며, 행정안전부장관이 검사 권한을 가진다.", "article_content": "①금고와 중앙회는 행정안전부장관이 요구하는 경우 업무 및 재산에 관한 보고서를 제출하여야 한다. ②행정안전부장관은 금고나 중앙회의 업무와 재산 상황을 검사할 수 있다."}, {"law": "새마을금고법", "article": "제74조의2", "title": "제재", "question": "행정안전부장관은 법령 위반 금고에 설립인가 취소까지 할 수 있다.", "answer": "O", "wrong_note": "", "article_content": "행정안전부장관은 금고나 중앙회가 법령을 위반한 경우 기관 경고, 업무 일부 정지, 임원 해임 요구, 설립인가 취소 등의 제재를 할 수 있다."}, {"law": "새마을금고법", "article": "제74조의2", "title": "제재", "question": "금고에 대한 제재는 행정안전부장관이 아닌 새마을금고중앙회장만이 할 수 있다.", "answer": "X", "wrong_note": "행정안전부장관이 법령 위반 시 기관경고·업무정지·인가취소 등 제재 권한을 가진다.", "article_content": "행정안전부장관은 금고나 중앙회가 법령을 위반한 경우 기관 경고, 업무 일부 정지, 임원 해임 요구, 설립인가 취소 등의 제재를 할 수 있다."}, {"law": "새마을금고법", "article": "제77조", "title": "경영건전성 유지", "question": "금고와 중앙회는 대통령령으로 정하는 경영건전성 기준을 지켜야 한다.", "answer": "O", "wrong_note": "", "article_content": "금고와 중앙회는 대통령령으로 정하는 경영건전성 기준을 지켜야 한다."}, {"law": "새마을금고법", "article": "제77조", "title": "경영건전성 유지", "question": "금고의 경영건전성 기준은 중앙회가 자율적으로 설정한다.", "answer": "X", "wrong_note": "경영건전성 기준은 대통령령으로 정하며, 금고와 중앙회 모두 준수해야 한다.", "article_content": "금고와 중앙회는 대통령령으로 정하는 경영건전성 기준을 지켜야 한다."}, {"law": "새마을금고법", "article": "제79조", "title": "경영실태 평가", "question": "새마을금고 경영실태 평가는 새마을금고중앙회장이 실시한다.", "answer": "O", "wrong_note": "", "article_content": "중앙회장은 금고의 경영실태를 주기적으로 평가하고, 그 결과를 금고의 경영 건전화를 위하여 활용한다."}, {"law": "새마을금고법", "article": "제79조", "title": "경영실태 평가", "question": "금고 경영실태 평가는 행정안전부장관이 직접 현장에서 실시한다.", "answer": "X", "wrong_note": "경영실태 평가는 중앙회장이 실시하며, 결과는 경영 건전화에 활용된다.", "article_content": "중앙회장은 금고의 경영실태를 주기적으로 평가하고, 그 결과를 금고의 경영 건전화를 위하여 활용한다."}, {"law": "새마을금고법", "article": "제80조", "title": "경영지도", "question": "중앙회장은 경영 부실 우려 금고에 경영지도를 실시할 수 있다.", "answer": "O", "wrong_note": "", "article_content": "중앙회장은 금고의 경영상태가 부실화될 우려가 있는 경우 경영지도를 실시할 수 있다."}, {"law": "새마을금고법", "article": "제80조", "title": "경영지도", "question": "경영지도는 행정안전부장관만이 실시할 수 있다.", "answer": "X", "wrong_note": "경영지도는 중앙회장이 실시한다. 장관은 경영개선명령 등의 권한을 갖는다.", "article_content": "중앙회장은 금고의 경영상태가 부실화될 우려가 있는 경우 경영지도를 실시할 수 있다."}, {"law": "새마을금고법", "article": "제80조의2", "title": "적기시정조치", "question": "적기시정조치에는 경영개선권고, 경영개선요구, 경영개선명령이 포함된다.", "answer": "O", "wrong_note": "", "article_content": "행정안전부장관은 금고의 경영상태가 기준에 미달하는 경우 경영개선권고, 경영개선요구, 경영개선명령 등 적기시정조치를 취할 수 있다."}, {"law": "새마을금고법", "article": "제80조의2", "title": "적기시정조치", "question": "적기시정조치는 새마을금고중앙회장이 독자적으로 결정하여 시행한다.", "answer": "X", "wrong_note": "적기시정조치는 행정안전부장관이 취하며, 중앙회장은 의견 제출 등 보조 역할을 한다.", "article_content": "행정안전부장관은 금고의 경영상태가 기준에 미달하는 경우 경영개선권고, 경영개선요구, 경영개선명령 등 적기시정조치를 취할 수 있다."}, {"law": "새마을금고법", "article": "제80조의3", "title": "계약이전", "question": "행정안전부장관은 부실금고의 계약이전을 명령할 수 있다.", "answer": "O", "wrong_note": "", "article_content": "장관은 부실금고의 계약이전을 다른 금고(인수금고)에 명령할 수 있으며, 계약이전에 관한 사항은 법에서 정한다."}, {"law": "새마을금고법", "article": "제80조의3", "title": "계약이전", "question": "계약이전 명령은 새마을금고중앙회가 단독으로 결정한다.", "answer": "X", "wrong_note": "계약이전 명령 권한은 행정안전부장관에게 있다.", "article_content": "장관은 부실금고의 계약이전을 다른 금고(인수금고)에 명령할 수 있으며, 계약이전에 관한 사항은 법에서 정한다."}, {"law": "새마을금고법", "article": "제82조", "title": "해산 사유", "question": "금고는 설립인가 취소로 해산될 수 있다.", "answer": "O", "wrong_note": "", "article_content": "금고는 다음의 경우에 해산한다: 총회의 의결, 합병, 설립인가의 취소, 파산"}, {"law": "새마을금고법", "article": "제82조", "title": "해산 사유", "question": "금고는 총회 의결 없이도 이사회 결정만으로 해산할 수 있다.", "answer": "X", "wrong_note": "금고 해산은 총회의 의결, 합병, 인가 취소, 파산의 경우에 이루어진다.", "article_content": "금고는 다음의 경우에 해산한다: 총회의 의결, 합병, 설립인가의 취소, 파산"}, {"law": "새마을금고법", "article": "제85조", "title": "벌칙", "question": "직무 관련 부당이익 취득 임직원은 5년 이하 징역 또는 5천만원 이하 벌금에 처해질 수 있다.", "answer": "O", "wrong_note": "", "article_content": "다음에 해당하는 자는 5년 이하의 징역 또는 5천만원 이하의 벌금에 처한다: 금고 또는 중앙회의 임직원이 직무와 관련하여 부당한 이익을 취한 경우, 허위 보고서 제출 등"}, {"law": "새마을금고법", "article": "제85조", "title": "벌칙", "question": "새마을금고법 위반 시 제재는 행정처분만 가능하며 형사처벌은 없다.", "answer": "X", "wrong_note": "새마을금고법에는 위반 유형에 따라 징역·벌금 등 형사처벌 규정이 있다.", "article_content": "다음에 해당하는 자는 5년 이하의 징역 또는 5천만원 이하의 벌금에 처한다: 금고 또는 중앙회의 임직원이 직무와 관련하여 부당한 이익을 취한 경우, 허위 보고서 제출 등"}, {"law": "새마을금고법 시행령", "article": "제3조", "title": "설립 동의자 수 기준", "question": "지역금고 설립을 위해서는 300명 이상의 설립 동의자가 있어야 한다.", "answer": "O", "wrong_note": "", "article_content": "새마을금고를 설립하려면 일정 수 이상의 설립 동의자가 필요하며, 지역금고는 300명 이상의 설립 동의자가 있어야 한다."}, {"law": "새마을금고법 시행령", "article": "제3조", "title": "설립 동의자 수 기준", "question": "새마을금고는 10명만 모이면 설립할 수 있다.", "answer": "X", "wrong_note": "지역금고 설립에는 300명 이상의 설립 동의자가 필요하다.", "article_content": "새마을금고를 설립하려면 일정 수 이상의 설립 동의자가 필요하며, 지역금고는 300명 이상의 설립 동의자가 있어야 한다."}, {"law": "새마을금고법 시행령", "article": "제7조", "title": "상근임원 기준", "question": "상근임원을 둘 수 있는 금고는 경영실태평가 종합 3등급 이상이어야 한다.", "answer": "O", "wrong_note": "", "article_content": "상근임원을 두는 금고의 기준은 이사장을 선출하는 연도의 전전 사업연도말 경영실태평가 종합평가 3등급(보통) 이상과 총자산대비순자본비율 0% 이상인 금고이다."}, {"law": "새마을금고법 시행령", "article": "제7조", "title": "상근임원 기준", "question": "모든 새마을금고는 의무적으로 상근임원을 두어야 한다.", "answer": "X", "wrong_note": "상근임원은 경영실태평가 3등급 이상, 순자본비율 0% 이상 등 기준을 충족한 금고만 둘 수 있다.", "article_content": "상근임원을 두는 금고의 기준은 이사장을 선출하는 연도의 전전 사업연도말 경영실태평가 종합평가 3등급(보통) 이상과 총자산대비순자본비율 0% 이상인 금고이다."}, {"law": "새마을금고법 시행령", "article": "제16조의3", "title": "구속행위 금지", "question": "금고는 대출 시 차용인 의사에 반한 예·적금 강제 가입 등 구속행위를 해서는 안 된다.", "answer": "O", "wrong_note": "", "article_content": "금고는 여신 취급과 관련하여 차용인의 의사에 반하여 예금·적금 가입을 강요하거나, 불공정한 담보·보증 요구, 지나친 금융상품 판매 강요 등의 구속행위를 하여서는 안 된다."}, {"law": "새마을금고법 시행령", "article": "제16조의3", "title": "구속행위 금지", "question": "금고는 대출 실행 시 어떤 조건이든 자유롭게 설정할 수 있다.", "answer": "X", "wrong_note": "대출 관련 구속행위는 법으로 금지되어 있다.", "article_content": "금고는 여신 취급과 관련하여 차용인의 의사에 반하여 예금·적금 가입을 강요하거나, 불공정한 담보·보증 요구, 지나친 금융상품 판매 강요 등의 구속행위를 하여서는 안 된다."}, {"law": "새마을금고법 시행령", "article": "제16조의4", "title": "동일인 대출한도", "question": "동일인 대출 최고한도는 자산총액 기준 7억원, 자기자본 기준 50억원이다.", "answer": "O", "wrong_note": "", "article_content": "금고의 동일인 대출한도는 자산총액의 100분의 1과 자기자본의 100분의 20을 초과할 수 없다. 행정안전부장관은 자산총액 1%에 대한 최고한도를 7억원으로 설정하고, 자기자본 20%에 대한 최고한도는 50억원으로 설정한다."}, {"law": "새마을금고법 시행령", "article": "제16조의4", "title": "동일인 대출한도", "question": "새마을금고의 동일인 대출한도는 자산총액의 10%이다.", "answer": "X", "wrong_note": "동일인 대출한도는 자산총액의 1%이며, 최고한도는 7억원이다.", "article_content": "금고의 동일인 대출한도는 자산총액의 100분의 1과 자기자본의 100분의 20을 초과할 수 없다. 행정안전부장관은 자산총액 1%에 대한 최고한도를 7억원으로 설정하고, 자기자본 20%에 대한 최고한도는 50억원으로 설정한다."}, {"law": "새마을금고법 시행령", "article": "제16조의5", "title": "금리인하 요구권", "question": "대출 이용자는 신용상태가 개선된 경우 금리 인하를 요구할 수 있다.", "answer": "O", "wrong_note": "", "article_content": "대출 이용자는 신용상태가 개선된 경우 금고에 대출 금리 인하를 요구할 수 있다. 금고는 요구를 받은 후 10영업일 이내에 수용 여부를 통보하여야 한다."}, {"law": "새마을금고법 시행령", "article": "제16조의5", "title": "금리인하 요구권", "question": "금리인하 요구권은 신규 대출 신청자에게만 인정된다.", "answer": "X", "wrong_note": "금리인하 요구권은 기존 대출 이용자가 신용상태 개선 시 행사할 수 있다.", "article_content": "대출 이용자는 신용상태가 개선된 경우 금고에 대출 금리 인하를 요구할 수 있다. 금고는 요구를 받은 후 10영업일 이내에 수용 여부를 통보하여야 한다."}, {"law": "새마을금고법 시행령", "article": "제50조", "title": "경영건전성 기준", "question": "금고는 총자산대비순자본비율을 4% 이상 유지하여야 한다.", "answer": "O", "wrong_note": "", "article_content": "금고는 총자산대비순자본비율 4% 이상, 대손충당금비율 100% 이상, 유동성비율 100% 이상 등을 유지하여야 한다."}, {"law": "새마을금고법 시행령", "article": "제50조", "title": "경영건전성 기준", "question": "금고의 유동성비율은 50% 이상이면 충분하다.", "answer": "X", "wrong_note": "유동성비율은 원칙적으로 100% 이상이어야 한다(자산 규모에 따라 달라질 수 있음).", "article_content": "금고는 총자산대비순자본비율 4% 이상, 대손충당금비율 100% 이상, 유동성비율 100% 이상 등을 유지하여야 한다."}, {"law": "새마을금고법 시행령", "article": "제51조", "title": "부실우려금고 지정기준", "question": "총자산대비순자본비율 4% 미만이면 부실우려금고로 지정될 수 있다.", "answer": "O", "wrong_note": "", "article_content": "총자산대비순자본비율이 4% 미만이거나 경영실태평가 종합평가 4등급 이하인 경우 부실우려금고로 지정될 수 있다."}, {"law": "새마을금고법 시행령", "article": "제51조", "title": "부실우려금고 지정기준", "question": "경영실태평가 2등급 금고도 부실우려금고로 지정될 수 있다.", "answer": "X", "wrong_note": "부실우려금고 지정기준은 순자본비율 4% 미만, 또는 종합평가 4등급 이하이다.", "article_content": "총자산대비순자본비율이 4% 미만이거나 경영실태평가 종합평가 4등급 이하인 경우 부실우려금고로 지정될 수 있다."}, {"law": "새마을금고법 시행령", "article": "제52조", "title": "경영지도인 선임", "question": "장관은 경영지도 대상 금고에 경영지도인을 선임할 수 있다.", "answer": "O", "wrong_note": "", "article_content": "장관은 경영지도 대상 금고에 경영지도인을 선임할 수 있으며, 경영지도인은 금고의 업무 전반을 지도·감독한다."}, {"law": "새마을금고법 시행령", "article": "제52조", "title": "경영지도인 선임", "question": "경영지도인은 중앙회장이 단독으로 선임하고 파견한다.", "answer": "X", "wrong_note": "경영지도인 선임 권한은 장관(행정안전부장관)에게 있다.", "article_content": "장관은 경영지도 대상 금고에 경영지도인을 선임할 수 있으며, 경영지도인은 금고의 업무 전반을 지도·감독한다."}, {"law": "새마을금고법 시행령", "article": "제56조", "title": "경영지도 위탁", "question": "행정안전부장관은 경영지도 업무 일부를 중앙회장에게 위탁할 수 있다.", "answer": "O", "wrong_note": "", "article_content": "행정안전부장관은 경영지도 업무의 일부를 중앙회장에게 위탁할 수 있다."}, {"law": "새마을금고법 시행령", "article": "제56조", "title": "경영지도 위탁", "question": "경영지도 업무는 위탁이 불가능하며 행정안전부가 직접 수행하여야 한다.", "answer": "X", "wrong_note": "장관은 경영지도 업무 일부를 중앙회장에게 위탁할 수 있다.", "article_content": "행정안전부장관은 경영지도 업무의 일부를 중앙회장에게 위탁할 수 있다."}, {"law": "새마을금고법 시행규칙", "article": "제2조", "title": "금고의 명칭", "question": "새마을금고의 명칭에는 반드시 '새마을금고'라는 글자가 포함되어야 한다.", "answer": "O", "wrong_note": "", "article_content": "금고의 명칭 중에는 반드시 '새마을금고'라는 글자를 사용하여야 한다."}, {"law": "새마을금고법 시행규칙", "article": "제2조", "title": "금고의 명칭", "question": "금고는 고유 명칭을 자유롭게 정할 수 있으며 '새마을금고'를 반드시 포함할 필요는 없다.", "answer": "X", "wrong_note": "명칭에는 반드시 '새마을금고'라는 글자를 사용하여야 한다.", "article_content": "금고의 명칭 중에는 반드시 '새마을금고'라는 글자를 사용하여야 한다."}, {"law": "새마을금고법 시행규칙", "article": "제4조", "title": "설립인가 신청", "question": "설립인가 신청 시 정관, 사업계획서, 창립총회 의사록 등을 제출해야 한다.", "answer": "O", "wrong_note": "", "article_content": "새마을금고 설립인가를 신청하려는 자는 인가신청서에 정관, 사업계획서, 창립총회 의사록 등을 첨부하여 행정안전부장관에게 제출하여야 한다."}, {"law": "새마을금고법 시행규칙", "article": "제4조", "title": "설립인가 신청", "question": "설립인가 신청 시 정관만 제출하면 된다.", "answer": "X", "wrong_note": "정관 외에 사업계획서, 창립총회 의사록 등 다양한 서류를 첨부하여야 한다.", "article_content": "새마을금고 설립인가를 신청하려는 자는 인가신청서에 정관, 사업계획서, 창립총회 의사록 등을 첨부하여 행정안전부장관에게 제출하여야 한다."}, {"law": "새마을금고법 시행규칙", "article": "제6조", "title": "정관 변경 인가", "question": "금고의 정관 변경은 행정안전부장관의 인가가 필요하다.", "answer": "O", "wrong_note": "", "article_content": "금고가 정관을 변경하려면 행정안전부장관의 인가를 받아야 한다."}, {"law": "새마을금고법 시행규칙", "article": "제6조", "title": "정관 변경 인가", "question": "정관 변경은 총회 의결만으로 효력이 발생하며, 별도 인가는 필요 없다.", "answer": "X", "wrong_note": "정관 변경 시 행정안전부장관의 인가를 받아야 한다.", "article_content": "금고가 정관을 변경하려면 행정안전부장관의 인가를 받아야 한다."}, {"law": "새마을금고법 시행규칙", "article": "제10조", "title": "장부의 비치", "question": "금고는 회원명부, 출자금액 원장, 총회·이사회 의사록 등을 주된 사무소에 비치해야 한다.", "answer": "O", "wrong_note": "", "article_content": "금고는 회원명부, 출자금액 원장, 총회·이사회 의사록 등을 작성하여 주된 사무소에 갖추어 두어야 한다."}, {"law": "새마을금고법 시행규칙", "article": "제10조", "title": "장부의 비치", "question": "금고의 장부는 전산으로만 보관하면 되고, 사무소에 비치할 의무는 없다.", "answer": "X", "wrong_note": "관련 장부는 주된 사무소에 갖추어 두어야 한다.", "article_content": "금고는 회원명부, 출자금액 원장, 총회·이사회 의사록 등을 작성하여 주된 사무소에 갖추어 두어야 한다."}, {"law": "새마을금고법", "article": "제8조", "title": "회원의 자격", "question": "법인이나 단체도 업무구역 내에 사무소가 있으면 금고 회원이 될 수 있다.", "answer": "O", "wrong_note": "", "article_content": "금고의 업무구역 내에 주소·거소·사무소 또는 사업장이 있는 개인·법인·단체는 금고 회원이 될 수 있다."}, {"law": "새마을금고법", "article": "제8조", "title": "회원의 자격", "question": "금고 회원은 개인만 가능하며 법인은 회원이 될 수 없다.", "answer": "X", "wrong_note": "개인뿐만 아니라 법인, 기타 단체도 업무구역 내 요건을 충족하면 회원이 될 수 있다.", "article_content": "금고의 업무구역 내에 주소·거소·사무소 또는 사업장이 있는 개인·법인·단체는 금고 회원이 될 수 있다."}, {"law": "새마을금고법", "article": "제22조", "title": "임원의 선거운동 제한", "question": "임원 선거운동은 공영제를 원칙으로 하며 금품 제공 등은 금지된다.", "answer": "O", "wrong_note": "", "article_content": "임원의 선거운동은 공영제를 원칙으로 하며, 금품·향응 제공, 호별 방문 등의 행위를 통한 선거운동은 금지된다."}, {"law": "새마을금고법", "article": "제22조", "title": "임원의 선거운동 제한", "question": "임원 선거 시 본인 홍보를 위한 금품 제공은 소액이면 허용된다.", "answer": "X", "wrong_note": "선거와 관련한 금품·향응 제공은 소액 여부와 관계없이 금지된다.", "article_content": "임원의 선거운동은 공영제를 원칙으로 하며, 금품·향응 제공, 호별 방문 등의 행위를 통한 선거운동은 금지된다."}, {"law": "새마을금고법", "article": "제33조", "title": "회계", "question": "금고의 사업연도는 1월 1일부터 12월 31일까지이다.", "answer": "O", "wrong_note": "", "article_content": "금고의 회계는 일반회계와 특별회계로 구분하며, 사업연도는 1월 1일부터 12월 31일까지이다."}, {"law": "새마을금고법", "article": "제33조", "title": "회계", "question": "금고의 사업연도는 금고 정관에서 자유롭게 정할 수 있다.", "answer": "X", "wrong_note": "새마을금고의 사업연도는 법에서 1월 1일부터 12월 31일까지로 정해져 있다.", "article_content": "금고의 회계는 일반회계와 특별회계로 구분하며, 사업연도는 1월 1일부터 12월 31일까지이다."}, {"law": "새마을금고법", "article": "제35조", "title": "준비금", "question": "금고의 법정적립금과 사업준비금은 결손 보전 이외 목적으로 사용할 수 없다.", "answer": "O", "wrong_note": "", "article_content": "금고는 법정적립금, 사업준비금 등을 적립하여야 하며, 이 준비금은 결손 보전 이외의 목적으로 사용할 수 없다."}, {"law": "새마을금고법", "article": "제35조", "title": "준비금", "question": "금고의 준비금은 회원 배당을 위해 사용할 수 있다.", "answer": "X", "wrong_note": "준비금은 결손 보전 이외의 목적으로 사용할 수 없다.", "article_content": "금고는 법정적립금, 사업준비금 등을 적립하여야 하며, 이 준비금은 결손 보전 이외의 목적으로 사용할 수 없다."}, {"law": "새마을금고법", "article": "제55조", "title": "중앙회의 임원", "question": "중앙회 회장은 중앙회를 대표하고 업무를 총괄한다.", "answer": "O", "wrong_note": "", "article_content": "중앙회에는 회장 1명, 이사 9명 이상, 감사 2명 이상을 두며, 회장은 중앙회를 대표하고 중앙회의 업무를 총괄한다."}, {"law": "새마을금고법", "article": "제55조", "title": "중앙회의 임원", "question": "중앙회 이사는 6명 이상이면 된다.", "answer": "X", "wrong_note": "중앙회 이사는 9명 이상이어야 한다.", "article_content": "중앙회에는 회장 1명, 이사 9명 이상, 감사 2명 이상을 두며, 회장은 중앙회를 대표하고 중앙회의 업무를 총괄한다."}, {"law": "새마을금고법", "article": "제56조", "title": "중앙회 임원의 임기", "question": "중앙회 회장의 임기는 4년이며 1회에 한하여 연임 가능하다.", "answer": "O", "wrong_note": "", "article_content": "중앙회 회장의 임기는 4년이며 1회에 한하여 연임할 수 있다. 이사와 감사의 임기는 3년이다."}, {"law": "새마을금고법", "article": "제56조", "title": "중앙회 임원의 임기", "question": "중앙회 이사의 임기는 개별 금고 이사와 동일하게 4년이다.", "answer": "X", "wrong_note": "중앙회 이사의 임기는 3년이다.", "article_content": "중앙회 회장의 임기는 4년이며 1회에 한하여 연임할 수 있다. 이사와 감사의 임기는 3년이다."}, {"law": "새마을금고법", "article": "제63조", "title": "중앙회의 회계", "question": "중앙회의 사업연도는 1월 1일부터 12월 31일까지이다.", "answer": "O", "wrong_note": "", "article_content": "중앙회의 회계는 일반회계와 특별회계로 구분하며, 사업연도는 금고와 동일하게 1월 1일부터 12월 31일까지이다."}, {"law": "새마을금고법", "article": "제63조", "title": "중앙회의 회계", "question": "중앙회의 회계는 금고와 달리 분기별 결산제를 채택한다.", "answer": "X", "wrong_note": "중앙회의 사업연도는 1월 1일부터 12월 31일까지이며 연간 결산이 원칙이다.", "article_content": "중앙회의 회계는 일반회계와 특별회계로 구분하며, 사업연도는 금고와 동일하게 1월 1일부터 12월 31일까지이다."}, {"law": "새마을금고법 시행령", "article": "제10조", "title": "총회의 의결정족수", "question": "정관 변경이나 해산 의결에는 출석회원 3분의 2 이상의 찬성이 필요하다.", "answer": "O", "wrong_note": "", "article_content": "총회는 재적회원(대의원) 과반수의 출석으로 개의하고, 출석회원 과반수의 찬성으로 의결한다. 다만 정관 변경, 해산, 합병 등 중요 사항은 3분의 2 이상의 찬성이 필요하다."}, {"law": "새마을금고법 시행령", "article": "제10조", "title": "총회의 의결정족수", "question": "모든 총회 의결은 출석회원 과반수로 가능하다.", "answer": "X", "wrong_note": "정관 변경, 해산, 합병 등 중요 사항은 3분의 2 이상의 찬성이 필요하다.", "article_content": "총회는 재적회원(대의원) 과반수의 출석으로 개의하고, 출석회원 과반수의 찬성으로 의결한다. 다만 정관 변경, 해산, 합병 등 중요 사항은 3분의 2 이상의 찬성이 필요하다."}, {"law": "새마을금고법 시행령", "article": "제14조", "title": "대의원 수", "question": "대의원회의 대의원 수는 50명 이상 100명 이하이다.", "answer": "O", "wrong_note": "", "article_content": "대의원회를 구성하는 경우 대의원 수는 50명 이상 100명 이하로 하며, 대의원의 임기는 4년이다."}, {"law": "새마을금고법 시행령", "article": "제14조", "title": "대의원 수", "question": "대의원의 임기는 2년이며 연임에 제한이 없다.", "answer": "X", "wrong_note": "대의원의 임기는 4년이다.", "article_content": "대의원회를 구성하는 경우 대의원 수는 50명 이상 100명 이하로 하며, 대의원의 임기는 4년이다."}, {"law": "새마을금고법 시행령", "article": "제17조", "title": "외부감사인 자격", "question": "금고의 외부감사인은 공인회계사 등 전문 자격자 중에서 선임한다.", "answer": "O", "wrong_note": "", "article_content": "금고의 외부감사인은 공인회계사, 세무사 또는 금융·회계 분야 전문가 중에서 선임하여야 한다."}, {"law": "새마을금고법 시행령", "article": "제17조", "title": "외부감사인 자격", "question": "금고의 외부감사인은 임직원 중에서 선임할 수 있다.", "answer": "X", "wrong_note": "외부감사인은 공인회계사 등 외부 전문가를 선임하여야 한다.", "article_content": "금고의 외부감사인은 공인회계사, 세무사 또는 금융·회계 분야 전문가 중에서 선임하여야 한다."}, {"law": "새마을금고법 시행령", "article": "제24조", "title": "이사회 의결사항", "question": "이사회는 사업계획과 예산을 의결하는 권한이 있다.", "answer": "O", "wrong_note": "", "article_content": "이사회는 사업계획, 예산, 대출 한도 설정, 내규 제·개정 등을 의결한다."}, {"law": "새마을금고법 시행령", "article": "제24조", "title": "이사회 의결사항", "question": "이사회는 금고 해산 및 정관 변경을 단독으로 의결할 수 있다.", "answer": "X", "wrong_note": "금고 해산과 정관 변경은 총회의 의결사항이며 이사회 단독으로 할 수 없다.", "article_content": "이사회는 사업계획, 예산, 대출 한도 설정, 내규 제·개정 등을 의결한다."}, {"law": "새마을금고법 시행령", "article": "제33조", "title": "자금 운용", "question": "중앙회의 여유자금 운용은 국채·지방채 등 안전 자산 중심이어야 한다.", "answer": "O", "wrong_note": "", "article_content": "중앙회는 여유자금을 국채·지방채·금융채 등 안전 자산 위주로 운용하여야 한다."}, {"law": "새마을금고법 시행령", "article": "제33조", "title": "자금 운용", "question": "중앙회는 투기 목적의 부동산 투자에 자유롭게 자금을 운용할 수 있다.", "answer": "X", "wrong_note": "중앙회의 자금 운용은 국채·지방채 등 안전 자산 위주로 하여야 한다.", "article_content": "중앙회는 여유자금을 국채·지방채·금융채 등 안전 자산 위주로 운용하여야 한다."}, {"law": "새마을금고법 시행령", "article": "제40조", "title": "선거관리위원회 위원 자격", "question": "선거관리위원회의 외부위원은 법조인, 교수 등 공신력 있는 인사여야 한다.", "answer": "O", "wrong_note": "", "article_content": "선거관리위원회 위원 중 회원이 아닌 위원의 자격은 법조인, 교수, 언론인 등 지역사회의 공신력 있는 인사이어야 한다."}, {"law": "새마을금고법 시행령", "article": "제40조", "title": "선거관리위원회 위원 자격", "question": "선거관리위원회는 전원 금고 회원으로만 구성하여야 한다.", "answer": "X", "wrong_note": "선거관리위원회는 2명 이상의 비회원 외부위원이 포함되어야 한다.", "article_content": "선거관리위원회 위원 중 회원이 아닌 위원의 자격은 법조인, 교수, 언론인 등 지역사회의 공신력 있는 인사이어야 한다."}, {"law": "새마을금고법 시행규칙", "article": "제7조", "title": "합병인가 신청", "question": "금고 합병 시 합병계획서, 재무상태표, 합병총회 의사록 등을 첨부하여 인가를 신청한다.", "answer": "O", "wrong_note": "", "article_content": "금고 간 합병을 하려는 경우 합병계획서, 각 금고의 재무상태표, 합병총회 의사록 등을 첨부하여 행정안전부장관에게 인가를 신청하여야 한다."}, {"law": "새마을금고법 시행규칙", "article": "제7조", "title": "합병인가 신청", "question": "금고 합병은 양 금고 이사회 의결만으로 진행되며 별도 인가는 불필요하다.", "answer": "X", "wrong_note": "금고 합병에는 행정안전부장관의 인가가 필요하며, 총회 의결도 거쳐야 한다.", "article_content": "금고 간 합병을 하려는 경우 합병계획서, 각 금고의 재무상태표, 합병총회 의사록 등을 첨부하여 행정안전부장관에게 인가를 신청하여야 한다."}, {"law": "새마을금고법 시행규칙", "article": "제12조", "title": "해산 신고", "question": "금고 해산 시 청산인은 행정안전부장관에게 지체 없이 신고하여야 한다.", "answer": "O", "wrong_note": "", "article_content": "금고가 해산한 경우 청산인은 지체 없이 행정안전부장관에게 해산 사실을 신고하여야 한다."}, {"law": "새마을금고법 시행규칙", "article": "제12조", "title": "해산 신고", "question": "금고 해산 시 중앙회에만 신고하면 되며 행정안전부 신고는 불필요하다.", "answer": "X", "wrong_note": "금고 해산은 청산인이 행정안전부장관에게 신고하여야 한다.", "article_content": "금고가 해산한 경우 청산인은 지체 없이 행정안전부장관에게 해산 사실을 신고하여야 한다."}];
+
+const OX_LAWS = [
+  {key:'새마을금고법', label:'새마을금고법', emoji:'📘'},
+  {key:'새마을금고법 시행령', label:'시행령', emoji:'📗'},
+  {key:'새마을금고법 시행규칙', label:'시행규칙', emoji:'📙'},
+  {key:'all', label:'전체', emoji:'📚'}
+];
+
+let oxState = {
+  law:'새마을금고법', questions:[], idx:0,
+  score:0, answered:false, lastCorrect:false, history:[]
+};
+
+function oxCount(key){
+  return key==='all'?OX_DATA.length:OX_DATA.filter(q=>q.law===key).length;
+}
+
+function oxRender(){
+  const cnt=document.getElementById('ox-cnt');
+  if(!cnt) return;
+
+  // ── 시작 화면 ──
+  if(oxState.questions.length===0){
+    const tabs=OX_LAWS.map(l=>`
+      <button class="ox-tab${oxState.law===l.key?' active':''}"
+              onclick="oxSelectLaw('${l.key}')">
+        ${l.emoji} ${l.label} <span class="ox-tab-cnt">${oxCount(l.key)}</span>
+      </button>`).join('');
+    const cur=OX_LAWS.find(l=>l.key===oxState.law);
+    cnt.innerHTML=`
+      <div style="font-size:26px;font-weight:900;margin-bottom:6px">📝 법령 OX 퀴즈</div>
+      <div style="font-size:15px;color:#8b95a1;line-height:1.6;margin-bottom:20px">
+        조문을 읽고 맞으면 <strong style="color:#03b26c">O</strong>, 틀리면 <strong style="color:#f04452">X</strong>를 선택하세요.<br>
+        오답 시 정답 조항이 바로 표시됩니다.</div>
+      <div class="ox-tabs">${tabs}</div>
+      <div class="ox-lawinfo">
+        <div class="ox-lawinfo-title">${cur.emoji} ${cur.key==='all'?'전체 법령':cur.key}</div>
+        <div class="ox-lawinfo-sub">총 ${oxCount(cur.key)}문항 · 매번 무작위 순서</div>
+      </div>
+      <button class="ox-startbtn" onclick="oxStart()">🚀 퀴즈 시작하기</button>`;
+    return;
+  }
+
+  // ── 결과 화면 ──
+  if(oxState.idx>=oxState.questions.length){
+    const total=oxState.questions.length;
+    const sc=oxState.score;
+    const pct=Math.round(sc/total*100);
+    const grade=pct>=90?'🏆 우수':pct>=70?'👍 양호':pct>=50?'💪 보통':'📚 더 공부해요';
+    const wrongs=oxState.history.filter(h=>!h.correct);
+    const wrongHtml=wrongs.length===0
+      ?'<div class="ox-perfect">🎉 모두 정답! 완벽합니다!</div>'
+      :`<div class="ox-wrong-section-title">✏️ 틀린 문제 복습 (${wrongs.length}개)</div>
+        ${wrongs.map(h=>`
+          <div class="ox-wrong-card">
+            <div class="ox-wrong-law">${h.q.law} · ${h.q.article} ${h.q.title}</div>
+            <div class="ox-wrong-q">${h.q.question}</div>
+            <div class="ox-wrong-ans-row">
+              <span class="ox-badge ox-badge-${h.q.answer==='O'?'o':'x'}">정답: ${h.q.answer}</span>
+              <span class="ox-badge ox-badge-my">내 답: ${h.userAns}</span>
+            </div>
+            ${h.q.answer==='X'?`<div class="ox-wrong-note">💡 ${h.q.wrong_note}</div>`:''}
+            <div class="ox-wrong-content">${h.q.article_content}</div>
+          </div>`).join('')}`;
+    cnt.innerHTML=`
+      <div style="font-size:26px;font-weight:900;margin-bottom:16px">결과</div>
+      <div class="ox-result-box">
+        <div class="ox-result-score">${sc} / ${total}</div>
+        <div class="ox-result-pct">${pct}점 · ${grade}</div>
+        <div class="ox-result-bar"><div class="ox-result-fill" style="width:${pct}%"></div></div>
+      </div>
+      ${wrongHtml}
+      <div class="ox-result-btns">
+        <button class="ox-retry" onclick="oxStart()">🔄 다시 풀기</button>
+        <button class="ox-back-btn" onclick="oxReset()">← 법령 선택</button>
+      </div>`;
+    return;
+  }
+
+  // ── 문제 화면 ──
+  const q=oxState.questions[oxState.idx];
+  const prog=oxState.idx+1;
+  const total=oxState.questions.length;
+  const pct=Math.round(oxState.idx/total*100);
+
+  const ansHtml=!oxState.answered
+    ?`<div class="ox-btn-row">
+        <button class="ox-ans-btn ox-o-btn" onclick="oxAnswer('O')">⭕ O</button>
+        <button class="ox-ans-btn ox-x-btn" onclick="oxAnswer('X')">❌ X</button>
+      </div>`
+    :`<div class="ox-feedback ${oxState.lastCorrect?'ox-correct':'ox-wrong-fb'}">
+        ${oxState.lastCorrect?'✅ 정답입니다!':'❌ 오답입니다'}
+      </div>
+      <div class="ox-explain-card">
+        <div class="ox-explain-label">📌 정답 조항</div>
+        <div class="ox-explain-ans">정답: <strong>${q.answer}</strong> &nbsp;
+          <span style="font-size:14px;color:#8b95a1;font-weight:600">${q.law} ${q.article} ${q.title}</span>
+        </div>
+        ${q.answer==='X'?`<div class="ox-explain-wrong">💡 ${q.wrong_note}</div>`:''}
+        <div class="ox-explain-content">${q.article_content}</div>
+      </div>
+      <button class="ox-nextbtn" onclick="oxNext()">${oxState.idx+1>=total?'📊 결과 보기':'다음 문제 →'}</button>`;
+
+  cnt.innerHTML=`
+    <div class="ox-progress-wrap">
+      <div class="ox-progress-info">
+        <span>${prog} / ${total}</span><span>점수 ${oxState.score}</span>
+      </div>
+      <div class="ox-pbar"><div class="ox-pfill" style="width:${pct}%"></div></div>
+    </div>
+    <div class="ox-law-badge">${q.law} · ${q.article} ${q.title}</div>
+    <div class="ox-qcard"><div class="ox-qtext">${q.question}</div></div>
+    ${ansHtml}`;
+}
+
+function oxSelectLaw(law){
+  oxState.law=law; oxState.questions=[];
+  oxState.idx=0; oxState.score=0; oxState.history=[];
+  oxRender();
+}
+function oxStart(){
+  let pool=oxState.law==='all'?[...OX_DATA]:[...OX_DATA.filter(q=>q.law===oxState.law)];
+  pool.sort(()=>Math.random()-.5);
+  oxState.questions=pool; oxState.idx=0; oxState.score=0;
+  oxState.answered=false; oxState.history=[];
+  oxRender();
+}
+function oxAnswer(userAns){
+  if(oxState.answered) return;
+  const q=oxState.questions[oxState.idx];
+  const correct=userAns===q.answer;
+  oxState.answered=true; oxState.lastCorrect=correct;
+  if(correct) oxState.score++;
+  oxState.history.push({q,userAns,correct});
+  oxRender();
+}
+function oxNext(){
+  oxState.idx++; oxState.answered=false; oxRender();
+}
+function oxReset(){
+  oxState.questions=[]; oxState.idx=0;
+  oxState.score=0; oxState.answered=false; oxState.history=[];
+  oxRender();
+}
+</script>
+
 </body>
 </html>
